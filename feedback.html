@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Main Page</title>
+  <link rel="stylesheet" href="home.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+ <script>
+function fun()
+{
+   var a=f1.name.value;
+  var b=f1.email.value;
+  var c=f1.phoneno.value;
+   var d=f1.feedback.value;
+   if(a=="")
+   {
+   alert("Please enter your name");
+   f1.name.focus();
+   }
+
+
+  else if(b=="")
+   {
+   alert("Please enter your E-Mail");
+   f1.email.focus();
+   }
+    else if(c=="")
+   {
+   alert("Please enter your phoneno");
+   f1.phoneno.focus();
+   }
+
+    else if (isNaN(d)) //is not a number
+  {
+  alert("Please Enter a Number");
+  f1.phoneno.focus();
+  }
+
+   else if(d=="")
+   {
+   alert("Please give us your feedback");
+   f1.feedback.focus();
+   }
+  
+  else
+   {
+alert("data submited successfully");
+f1.submit();
+   }
+   }
+</script>
+
+
+<body>
+   <div class="jumbotron" style=" background-color: rgb(49, 88, 150); height:200px">
+      <h1 align="center">Online E-Learning Portal</h1>      
+       <p align="center">Feel the joy of Learning</p>
+  </div>
+  <div style="height:350px">
+
+  <h2 align="center">Feedback Form</h2>
+<form name="f1" class="form-horizontal" action="/action_page.php">
+  <div class="form-group">
+
+      <label  class="control-label col-sm-4" for="Feedback.name">Name:</label>
+    <div class="col-sm-4">
+      <input  type="name"  class="form-control" id="name" name="name" placeholder="Enter your name">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-4" for="Feedback.email">E-Mail:</label>
+    <div class="col-sm-4"> 
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your E-Mail">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="Feedback.phoneno">Phone Number:</label>
+    <div class="col-sm-4"> 
+      <input type="phoneno" class="form-control" id="phoneno" maxlength="10" name="phoneno" placeholder="Enter your Phone Number">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="Feedback.feedback">Feedback:</label>
+    <div class="col-sm-4"> 
+      <textarea type="feedback" class="form-control" id="feedback" name="feedback" placeholder="Give us your Feedback"></textarea>
+    </div>
+  </div>
+ <div class="form-group">        
+      <div class="col-sm-offset-4 col-sm-10">
+        <button type="button" class="btn btn-primary"  onclick='fun()'>Submit</button>
+       
+      </div>
+    </div>
+  </div>
+</form>
+<div class="jumbotron" style=" background-color: rgb(49, 88, 150); height:100px">
+      <h5 align="center" style="color: white">&copy;2018 Online E-Learning portal Team,Bangalore</h5>      
+       
+  </div>
+</body>
+</div>
+</html>
+
+
+
+ 
