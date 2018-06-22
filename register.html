@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Main Page</title>
+  <linkrel="stylesheet" href="home.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script>
+function fun()
+{
+   var a=f1.Firstname.value;
+   var b=f1.Lastname.value;
+   var c=f1.Email.value;
+   var d=f1.Password1.value;
+   var e=f1.Password.value;
+   var f=f1.gender.value;
+   var g=f1.Place.value;
+   var h=f1.Phoneno.value;
+   var i=f1.course.value;
+   var j=f1.Address.value;
+  
+   if(a=="")
+   {
+   alert("Please fill Firsttname");
+   f1.Firstname.focus();
+   }
+   else if(b=="")
+   {
+   alert("Please fill Lastname");
+   f1.Lastname.focus();
+   }
+    else if(c=="")
+   {
+   alert("Please enter Email");
+   f1.Email.focus();
+   }
+    else if(d=="")
+   {
+   alert("Please enter Password");
+   f1.Password1.focus();
+   }
+    else if(e=="")
+   {
+   alert("Please enter Paswword correctly");
+   f1.Password.focus();
+   }
+   else if(f=="")
+   {
+   alert("Enter gender");
+   f1.gender.focus();
+   }
+else if (g=="") //is not a number
+{
+alert("Please Enter place");
+ f1.place.focus();
+  }
+
+ else if(h=="")
+   {
+   alert("PhoneNumber is empty");
+   f1.Phoneno.focus();
+   }
+   else if(i=="")
+   {
+   alert("Course is empty");
+   f1.course.focus();
+   }
+   else if(j=="")
+   {
+   alert("Address is empty");
+   f1.Address.focus();
+   }
+  else
+   {
+alert("Registered successfully");
+f1.submit();
+   }
+   }
+</script>
+
+</head>
+<body>
+   <div class="jumbotron" style=" background-color: rgb(49, 88, 150); height:200px">
+      <h1 align="center">Online E-Learning Portal</h1>      
+       <p align="center">Feel the joy of Learning</p>
+  </div>
+  <body>
+    <div class="container">
+      <center><h2>Student Registration Form</h2></center>
+    </div>
+    <br>
+
+    <form  name="f1" class="form-horizontal" action="homepage.html">
+
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="FirstName">FirstName:</label>
+      <div class="col-sm-8">
+        <input type="FirstName" class="form-control" style="width:56%; margin-right: 15px" id="Firstname"  name="Firstname" placeholder="Enter First Name"></div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="LastName">LastName:</label>
+      <div class="col-sm-8">
+        <input type="LastName" class="form-control" style="width:56%; margin-right: 15px" id="Lastname" name="Lastname" placeholder="Enter Last Name"></div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="Email">Email:</label>
+      <div class="col-sm-8">
+        <input type="Email" class="form-control" style="width:56%; margin-right: 15px" id="Email" name="Email" placeholder="Enter your email"></div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="Password">Set Password:</label>
+      <div class="col-sm-8">
+        <input type="Password" class="form-control" style="width:56%; margin-right: 15px" id="Password1" name="Password1" placeholder="Enter your password"></div>
+      </div>
+
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="Password">Confirm Password:</label>
+      <div class="col-sm-8">
+        <input type="Password" class="form-control" style="width:56%; margin-right: 15px" id="Password" name="Password"  placeholder="Re-enter your password"></div>
+      </div>
+
+
+
+       
+       <div class="form-group">
+       <label class="control-label col-sm-4" for="Gender">Gender:</label>
+       <div class="col-sm-8">
+        <select class="form-control" style="width:56%; margin-right: 15px" id="gender" name="gender" required>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+      </select> </div></div>
+
+
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="Place">Place:</label>
+      <div class="col-sm-8">
+        <input type="Place" class="form-control" style="width:56%; margin-right: 15px" id="Place" name="Place" placeholder="Enter place name"></div>
+      </div>
+
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="PhoneNumber">Phone Number:</label>
+      <div class="col-sm-8">
+        <input type="Phoneno" class="form-control" style="width:56%; margin-right: 15px" id="Phoneno"
+        name="Phoneno" maxlength="10"  placeholder="Enter your phone number"></div>
+      </div>
+
+
+
+      <div class="form-group">
+      <label class="control-label col-sm-4" for="Course">Course:</label>
+      <div class="col-sm-8">
+      <select class="form-control" style="width:56%; margin-right: 15px" id="course" name="course" required>
+        
+            <option value="select">--select--</option>
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="mech">MECHANICAL</option>
+            <option value="civil">CIVIL</option>
+            </select>
+          </div></div>
+          
+
+           
+    <div class="form-group">
+          <label class="control-label col-sm-4" for="Address">Address:</label>
+          <div class="col-sm-8">
+            <textarea class="form-control" style="width:56%; margin-right: 15px" id="Address" placeholder="Address" rows="3" cols="3" name="Address"></textarea><br>
+            </div></div>
+        <center><button type="button" style="width:25%; margin-right: 15px; margin-left:50px" class="btn btn-primary" onclick='fun()'>Register Me!</button></center><br>
+        <br>
+
+  </form>
+</body>
+
+<div class="jumbotron" style=" background-color: rgb(49, 88, 150); height:100px">
+      <h5 align="center" style="color: white">&copy;2018 Online E-Learning portal Team,Bangalore</h5>      
+       
+  </div>
+
+</body>
+</html>
