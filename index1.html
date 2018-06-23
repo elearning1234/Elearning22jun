@@ -1,14 +1,14 @@
 <html><head>
-<title>Registration Form...</title>
+<title>Index..</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/index.css">
 	<style>
 	#img 
 	{
-    background: url("homie.jpg") no-repeat center center fixed;
+    background: url("images/index.jpg") no-repeat center center fixed;
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -26,10 +26,32 @@ top:0;
 display: block;
 position: fixed;
 }
-
-	</style>
-	
+	</style>	
 </head>
+<script>
+  function fun()
+  {
+var a=f1.username.value;
+var b=f1.password.value;
+if(a=="")
+   {
+   alert("Please Enter your Username");
+   f1.username.focus();
+   }
+
+
+  else if(b=="")
+   {
+   alert("Please Enter your Password");
+   f1.password.focus();
+   }
+   else
+   {
+alert("Login successful ");
+f1.submit();
+   }
+  }
+</script>
 <body>
 <div id="img"></div>
 <div id="img-bg">
@@ -37,21 +59,22 @@ position: fixed;
 <br>
 <center><h1 style="color:white">Feel the joy of learning</h1></div></center>
 <br><br><br><br><br>
+<form name="f1" class="form-horizontal" action="home.html">
 <div class="margins">
 <div class="rightpane" >
     <div class="paddin">
-<label for="uname"><b>Username</b></label>
-         <input type="text" placeholder="Enter Username" name="uname" required>
+<label for="username"><b>Username</b></label>
+         <input type="text" placeholder="Enter Username" name="username" required>
      
-         <label for="psw"><b>Password</b></label>
-         <input type="password" placeholder="Enter Password" name="psw" required>
+         <label for="password"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="password" required>
      
-         <button type="submit">Login</button>
+         <button type="button" onclick='fun()'>Login</button>
        
          <center> <a href="#" > <font color="green">Forgotpassword?</font></a></center>
          <br>
           <label for="new"><b>New User</b></label>
-          <a href="#"><button type="button">SIGN UP </button>
+          <a href="register.html"><button type="button" >SIGN UP </button>
            </a>
    </div>
 </div></div>
